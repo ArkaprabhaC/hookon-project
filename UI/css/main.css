@@ -1,0 +1,661 @@
+/**********Normailize ***********/
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 0.9rem;
+}
+h5{
+    font-size: 10px;
+}
+h6{
+    font-size: 8px;
+}
+p{
+    font-size: 9px;
+}
+@media (min-width: 800px){
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 1.25em;
+    }
+    h5{
+        font-size: 14px;
+    }
+    h6{
+        font-size: 10px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+body{
+    font-family: 'Roboto', fallback, sans-serif;
+    color: #141414;
+    background: #F2F2F2;
+}
+.cta{
+    display: inline-block;
+    background: #D84F57;
+    padding: 0.75em 0.5em;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15);
+}
+
+/*********** Header ***********/
+header{
+    background: #fff;
+    height: 60px;
+}
+header .container{
+    width: 100%;
+    height: inherit;
+}
+
+
+        /*********** Mobile header ***********/
+.mobile-header{
+    display: flex;
+    padding: 0 5vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15);
+    background: white;
+    z-index: 999;
+}
+.mobile-header .header-icon{
+    line-height: 60px;
+}
+.mobile-header .header-icon >div img{
+    height: 18px;
+}
+.mobile-header .screen-name{
+    flex-grow: 2;
+    text-align: center;
+    color: #333333;
+    
+}
+.mobile-header .login{
+    display: block;
+    
+}
+.mobile-header .login li a{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 700;
+    color: #141414;
+}
+.mobile-header .header-icon{
+    cursor: pointer;
+}
+.header-icon div img{
+        vertical-align: middle;
+        width: 24px;
+    
+}      /*********** End of Mobile header ***********/
+
+
+
+.logo{
+    line-height: 60px;
+    display: none;
+}
+.logo img{
+    height: 40%;
+    vertical-align: middle;
+}
+
+         /*********** bottom navbar ***********/
+nav{
+    width: 100%;
+    max-width: 800px;
+    
+}
+.navbar-links{
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+.navbar-links li{
+    text-align: center;
+}
+.navbar-links svg{
+    height: 24px;
+}
+.navbar-links li a{
+    color: #828282;
+    
+}
+.navbar-links h5{
+    font-weight: 700;
+    font-size: 12px;
+}
+.navbar-links li:last-child{
+    display: none;
+}
+.navbar-links .active a,.navbar-links .active svg path{
+    color: #D84F57;
+    fill: #D84F57;
+}         /*********** End of bottom navbar ***********/
+
+@media (min-width: 800px){
+    header .container{
+        width: 90%;
+}
+    .mobile-header{
+        display: none;
+    }
+    .logo{
+        display: inline;
+    }
+    nav{
+        max-width: 600px;
+        float: right;
+        
+    }
+    .navbar-links{
+        justify-content: space-around;
+        position: relative;
+        box-shadow: none;
+    }
+    .navbar-links li:last-child{
+        display: block;
+    }
+    .navbar-links svg{
+        height: 28px;
+    }
+    .mobile-header .login{
+        float: right;
+        display: none;
+    }
+}  /*********** End of Header***********/
+
+/********** Login modal ***********/
+.modal-btn{
+    display: inline-block;
+    cursor: pointer;
+}
+.login-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    overflow: scroll;
+}
+.login-modal .container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    max-width: 900px;
+    padding: 2em 5vw 1em; 
+    border-radius: 3px;
+}
+.login-modal .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.login-modal h1, .login-modal h3{
+    text-align: center;
+}
+.login-modal h3{
+    color: #828282;
+    padding: 0.15rem 0 0.5rem;
+}
+.modal-content form{
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+}
+.modal-content form label{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 1em 0 0.15rem;
+}
+.modal-content form .name{
+    padding-bottom: 2em;
+}
+.modal-content form #email{
+    display: block;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #828282;
+    width: 100%;
+}
+.modal-content form #email:focus{
+    box-shadow: 0 2px 1px #828282;
+}
+.modal-content form .password{
+    padding: 2em 0;
+}
+.modal-content form .password a{
+    float: right;
+    color: #828282;
+}
+.modal-content form .input-password{
+    display: flex;
+    padding: calc(0.5em - 3px) 0;
+    border-bottom: 1px solid #828282;
+}
+.focused{
+    box-shadow: 0 1px #828282;
+}
+.modal-content form .input-password input{
+    flex-grow: 1;
+}
+.input-password .eye-slash{
+    display: none;
+}
+.eye img{
+    float: right;
+    height: 24px;
+}
+.modal-content form input[type="submit"]{
+    background: #D84F57;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    padding: 1em 0;
+    color: #fff;
+    border-radius: 3px;
+    
+}
+.modal-content form input[type="submit"]:hover{
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.2);
+}
+.modal-content .registration-link a{
+    color: #D84F57;
+}
+/********** End of Login modal ***********/
+
+
+.user-avatar{
+    display: block;
+    text-align: center;
+}
+.user-avatar .user-img{
+    display: inline-block;
+}
+.user-avatar .user-img img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/*********** Home Content ***********/
+.content{
+    padding-bottom: calc(60px + 1em);
+}
+
+                  /*********** Hero start ***********/
+#hero .container{
+    padding: 8vw 0;
+    position: relative;
+}
+#hero h1{
+    padding-bottom: 2rem;
+}
+#hero .cta{
+    width: 100%;
+    max-width: 400px;
+    
+}
+#hero .cta svg{
+    width: 24px;
+    vertical-align: middle;
+}
+#hero .cta svg path{
+    fill: #fff;
+}
+#hero .cta h3{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-weight: 500;
+}
+#hero .illustration{
+    position: absolute;
+    height: 120%;
+    top: 60%;
+    right: 0;
+    transform: translate(-5%, -50%);
+    display: none;
+}
+@media (min-width: 800px){
+    #hero .cta svg{
+        width: 24px;
+    }
+}
+@media (min-width: 1200px){
+    #hero .illustration{
+        display: block;
+    }
+}
+         /*********** End of Hero ***********/
+
+        /*********** Popular internships starts ***********/
+#popular-internships .container{
+    padding-top: 3.5vw;
+}
+#popular-internships .container{
+    display: flex;
+    align-items: baseline;
+}
+#popular-internships .container h3{
+    flex-grow: 2;
+    
+}
+#popular-internships .more{
+    display: inline-block;
+    color: #ED9499;
+    font-weight: 500;
+}
+#popular-internships .owl-carousel{
+    width: 95%;
+    padding-top: 1em;
+    margin-left: 5vw;
+}
+#popular-internships .owl-carousel .items .img{
+    height: 25vw;
+    max-height: 220px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#popular-internships .owl-carousel .items{
+    background: #fff;
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-bottom: 5vw;
+}
+#popular-internships .owl-carousel .items .label{
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+@media (min-width: 800px){
+    #popular-internships .owl-carousel{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+}            /*********** End of Popular Internships   ***************/
+
+ 
+         /************Courses cta**************/
+#courses-ad{
+    margin: 5vw 0;
+    background: #fff;
+}
+#courses-ad .container{
+    padding: 5vw 1.5em;
+    
+    /* box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15); */
+}
+#courses-ad h4{
+    width: 95%;
+    max-width: 480px;
+    color: #828282;
+}
+
+#courses-ad .cta2{
+    display: inline-block;
+    border: solid  2px #828282;
+    padding: 0.75em 0.5em;
+    color: #828282;
+    border-radius: 3px;
+    margin: 1em 0;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+@media (min-width: 800px){
+    #courses-ad{
+        background-image: url(https://cdn.dribbble.com/users/391380/screenshots/4314101/icon-1.jpg);
+        background-position: center right;
+        background-size: stretch;
+        background-repeat: no-repeat;
+    }
+}
+/************Company list*************/
+#company-list .container{
+    padding-top: 5vw;
+}
+#company-list .items{
+    margin-left: 5vw;
+}
+#company-list .items a h4{
+    text-align: center;
+    color: #828282;
+    font-weight: 400;
+}
+#company-list .items img{
+    padding-bottom: 0.5em;
+
+}
+#company-list h2{
+    padding-bottom: 0.5em;
+}
+#company-list .owl-carousel{
+    width: 100%;
+    
+}
+/**********End of Company list********/
+
+#search-card{
+    padding: 1em 0;
+}
+#search-card .row{
+    padding: 1.5em;
+    background: #D84F57;
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+#search-card .row input{
+    width: 100%;
+    color: white;
+    padding: 0.5em 0;
+    border-bottom: solid 1px #fff;
+    
+}
+#search-card .row > div{
+    padding: 0.5em;
+}
+#search-card .row input::placeholder{
+    color: #fff;
+}
+#search-card .row input:focus{
+    box-shadow: 0 2px 0 -1px #fff;
+}
+#search-card .autocomplete-items >div{
+    background: #fff;
+    color: #141414;
+    padding: 0.25em;
+}
+
+#search-results{
+    padding: 1em 0.5em;
+
+}
+#search-resuts span{
+    padding-bottom: 0.85em;
+}
+#search-results .results{
+    padding: 1em 0;
+}
+.card{
+    padding: 1.5em 5vw;
+    padding-bottom: 0;
+    margin-bottom: 2em;
+    background: white;
+    box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15);
+}
+.card .tag{
+    margin: 0.5rem auto 0;
+    background: #e0e0e0;
+    display: inline-block;
+    padding: 0.25rem 0.35rem;
+    color: #828282;
+    text-transform: uppercase;
+}
+.card .company-logo{
+    width: 100%;
+    max-width: 80px;
+}
+.card .company-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.card h4{
+    font-weight: 400;
+}
+.card .location, .card .stipend, .card .duration, .card .apply-by{
+    padding: 0.2em 0;
+    color: #828282;
+}
+.card .location, .card .apply-by{
+    vertical-align: middle;
+}
+.card .location img, .card .apply-by img{
+    vertical-align: middle;
+    margin-left: -6px;
+}
+.card .location h4, .card .apply-by h4{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.card .buttons{
+    margin-top: 1rem;
+    
+}
+.card .buttons .cta2{
+    color: #828282;
+    padding: 0.5rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    min-height: 45px;
+    line-height: 45px;
+}
+.buttons .cta2 img{
+    vertical-align: middle;
+}
+@media (min-width: 800px){
+    .results .card{
+        padding-bottom: 0.5rem;
+    }
+    .card .buttons .cta2{
+        font-size: 1.25rem;
+    }
+}
+
+/* Bookmarks */
+.bookmark-sponsor{
+    display: none;
+}
+.bookmark-sponsor img{
+    padding: 1em;
+    width: 100%;
+}
+@media (min-width: 800px){
+    .bookmarks{
+        width: 100%;
+        max-width: 1400px;
+    }
+    .bookmark-sponsor{
+        display: block;
+    }
+}
+
+
+/* Courses */
+
+#courses .filter{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+#courses .filter label{
+    font-weight: 700;
+}
+#courses .filter select{
+    color: #D84F57;
+    padding: 0 1vw;
+}
+#courses .filter option{
+    background: white;
+    color: #141414;
+}
+#courses .card h4{
+    padding: 0.5rem 0;
+}
+.card .price{
+    padding: 0.5rem 0;
+}
+.price h3{
+    text-decoration: line-through;
+}
+.price h1{
+    color: #D84F57;
+}
+/* Courses End */
+
+/* Register page */
+.content.register{
+    padding-bottom: 0;
+}
+.register-content{
+    padding: 2em 0;
+}
+.register-content h1,.register-content h3{
+    text-align: center;
+}
+#modal:target .login-modal{
+    display: block;
+}

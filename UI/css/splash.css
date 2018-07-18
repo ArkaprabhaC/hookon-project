@@ -1,0 +1,29 @@
+.splash{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #D84F57; 
+    z-index: 9999;
+}
+.splash-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 200px;
+}
+.splash .splash-content h3{
+    text-align: center;
+    letter-spacing: 0.45rem;
+    padding-left: 0.45rem;
+}
+@media (min-width: 800px){
+    .splash .splash-content h3{
+        letter-spacing: 3px;
+        padding-left: 3px;
+    }
+}

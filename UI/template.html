@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hookon | Internship Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid.css">
+    <link rel="stylesheet" href="css/owl.min.css">
+    <link rel="stylesheet" href="css/owltheme.min.css">
+    <link rel="stylesheet" href="css/splash.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.js"></script>
+    
+</head>
+<body>
+    <div class="splash"> <!--splash screen only on home page-->
+        <div class="splash-content">
+            <h3>WELCOME TO</h3>
+            <img src="img/logo.svg" alt="Logo of Hookon">
+        </div>
+    </div>  <!--end of splash screen-->
+    <div class="wrapper"> <!--All the content of the webpage is wrapped in this div/ this is optional-->
+        <header> <!--Header-->
+                <div class="container">
+            <div class="mobile-header">  <!--Header visible only in mobile-->
+                <div class="header-icon">
+                    <div class="back" onclick="location.href='index.html'">
+                        <img src="img/icons/chevron-back.svg" alt="Hamburger Icon">
+                    </div>
+                    <!--    <div class="back-button"><img src="img/icons/chevron-back.svg" alt="Back icon">
+                    </div>   -->
+                </div>
+                <div class="screen-name">
+                    <h3>Search</h3>
+                </div>
+                <div class="login">  <!--Top Log in button on mobile / shows profile pictured when already logged in-->
+                    <li>
+                        <a class="modal-btn" href="#modal">   
+                            
+                            Log in
+                        </a>
+                        <a href="dashboard.html" class="user-avatar">
+                                <span class="user-img">
+                                        <img src="img/user-avatar.jpg" alt="">
+                                </span>
+                                <h5>First Name</h5>
+                            </a>
+                    </li>
+                    
+                </div>
+            </div> <!--End of mobile header-->
+            
+                    <a href="" class="logo"><img src="img/logo.svg" alt=""></a>  <!--Logo on nav visible only on desktop-->
+            
+            
+            <nav>  <!--becomes bottom nav on mobile-->
+                <div class="navbar-links">  
+                    <li>
+                        <a href="index.html">
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0L20 9.1585V21.356H12.0441V15.0693H7.95588V21.356H0V9.1585L10 0ZM2 10.0388V19.356H5.95588V13.0693H14.0441V19.356H18V10.0388L10 2.71203L2 10.0388Z" transform="translate(4 3.64398)" fill="#828282"/>
+                                </svg>
+                                
+                            <h5>Home</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bookmarks.html">
+                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 22V1.6C16 1.03995 16 0.759921 15.891 0.546009C15.7951 0.357847 15.6422 0.204867 15.454 0.108993C15.2401 0 14.9601 0 14.4 0H1.6C1.03995 0 0.759921 0 0.546009 0.108993C0.357847 0.204867 0.204867 0.357847 0.108993 0.546009C0 0.759921 0 1.03995 0 1.6V22L8 14L16 22ZM2 17.1716L6.58579 12.5858C7.36684 11.8047 8.63317 11.8047 9.41421 12.5858L14 17.1716V2H2V17.1716ZM2.00751 1.10039C2.00751 1.1004 2.00746 1.10101 2.00732 1.10219L2.00751 1.10039ZM1.1022 2.00732C1.10101 2.00745 1.1004 2.00751 1.10039 2.00751L1.1022 2.00732ZM14.8996 2.00751C14.8996 2.00751 14.899 2.00746 14.8978 2.00732L14.8996 2.00751ZM13.9927 1.1022C13.9925 1.10101 13.9925 1.1004 13.9925 1.10039L13.9927 1.1022Z" transform="translate(6 3.76831)" fill="#828282"/>
+                                </svg>
+                                
+                            <h5>Bookmarks</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5833 12.8333H13.6617L13.335 12.5183C14.4783 11.1883 15.1667 9.46167 15.1667 7.58333C15.1667 3.395 11.7717 0 7.58333 0C3.395 0 0 3.395 0 7.58333C0 11.7717 3.395 15.1667 7.58333 15.1667C9.46167 15.1667 11.1883 14.4783 12.5183 13.335L12.8333 13.6617V14.5833L18.6667 20.405L20.405 18.6667L14.5833 12.8333ZM7.58331 12.8333C4.67831 12.8333 2.33331 10.4883 2.33331 7.58331C2.33331 4.67831 4.67831 2.33331 7.58331 2.33331C10.4883 2.33331 12.8333 4.67831 12.8333 7.58331C12.8333 10.4883 10.4883 12.8333 7.58331 12.8333Z" transform="translate(3.5 4.26831)" fill="#868686"/>
+                                    </svg>
+                                    
+                            <h5>Search</h5>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="applications.html">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H18V22H2V2ZM0 2C0 0.895447 0.895447 0 2 0H18C19.1046 0 20 0.895447 20 2V22C20 23.1046 19.1046 24 18 24H2C0.895447 24 0 23.1046 0 22V2ZM14 18C14.5522 18 15 17.5523 15 17C15 16.4477 14.5522 16 14 16H6C5.44769 16 5 16.4477 5 17C5 17.5523 5.44769 18 6 18H14ZM15 12C15 12.5523 14.5522 13 14 13H6C5.44769 13 5 12.5523 5 12C5 11.4477 5.44769 11 6 11H14C14.5522 11 15 11.4477 15 12ZM14 8C14.5522 8 15 7.55231 15 7C15 6.44769 14.5522 6 14 6H6C5.44769 6 5 6.44769 5 7C5 7.55231 5.44769 8 6 8H14Z" transform="translate(4 2.76831)" fill="#828282"/>
+                                    </svg>
+                                    
+                            <h5>Applications</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 2H2V15H8C8.55231 15 9 15.4478 9 16C9 16.5522 8.55231 17 8 17H2C0.895447 17 0 16.1046 0 15V2C0 0.895386 0.895447 0 2 0H19C20.1046 0 21 0.895386 21 2V5C21 5.55225 20.5522 6 20 6C19.4478 6 19 5.55225 19 5V2ZM10 8C10.5523 8 11 7.55225 11 7C11 6.44775 10.5523 6 10 6H6C5.44769 6 5 6.44775 5 7C5 7.55225 5.44769 8 6 8H10ZM13 17.7428C11.7785 16.734 11 15.208 11 13.5C11 10.4624 13.4625 8 16.5 8C19.5376 8 22 10.4624 22 13.5C22 15.208 21.2216 16.7341 20 17.7429V24L17.1643 21.4795C16.7855 21.1427 16.2145 21.1427 15.8357 21.4795L13 24V17.7428ZM19.8 13.5C19.8 15.3225 18.3225 16.8 16.5 16.8C14.6775 16.8 13.2 15.3225 13.2 13.5C13.2 11.6775 14.6775 10.2 16.5 10.2C18.3225 10.2 19.8 11.6775 19.8 13.5Z" transform="translate(3 3.76831)" fill="#828282"/>
+                                    </svg>
+                                    
+                            <h5>Courses</h5>
+                        </a>
+                    </li>
+                    <li class="login">
+                        <a class="modal-btn">   
+                            
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200Z" fill="#A5A5A5"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M90 30C90 46.6 76.6 60 60 60C43.4 60 30 46.6 30 30C30 13.4 43.4 0 60 0C76.6 0 90 13.4 90 30ZM0 110C0 90 40 79 60 79C80 79 120 90 120 110V120H0V110Z" transform="translate(40 40)" fill="white"/>
+                                    </svg>
+                                    
+                            <h5>Log in</h5>
+                        </a>
+                        <a href="dashboard.html" class="user-avatar">
+                            <span class="user-img">
+                                    <img src="img/user-avatar.jpg" alt="">
+                            </span>
+                            <h5>First Name</h5>
+                        </a>
+                    </li>
+                </div>
+            </nav>
+            
+        </div>
+        </header><!--End of Header -->
+<!--Login modal-->
+<div id="modal" class="login-modal">
+    <div class="container">
+        <span class="close">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12V22H10V12H0V10H10V0H12V10H22V12H12Z" transform="translate(3 3)" fill="#828282"/>
+                    </svg>
+                    
+        </span>
+        <div class="modal-content">
+
+        <h1>Welcome Back</h1>
+        <h3>Log in to continue</h3>
+        <form action="" method="post">
+            <div class="email">
+                <label for="email">Email</label>
+                <input id="email" type="text" name="Email" placeholder="Type your registered Email Id" required>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <a href="forgot password">Forgot?</a>  
+                <div class="input-password" tabindex="0">
+                        <input id="password" type="password" name="Password" placeholder="Enter your password" required>
+                        <span class="eye" onclick="passwordVisibility()">
+                            <div class="eye-open">
+                                <img src="https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-09-512.png" alt="">
+                            </div>
+                            <div class="eye-slash">
+                                <img src="https://cdn3.iconfinder.com/data/icons/show-and-hide-password/100/show_hide_password-08-128.png" alt="">
+                            </div>
+                        </span>
+                </div> </div>
+            <input id="log-in-btn" type="submit" value="Log In">
+        </form>
+        <h3 class="registration-link">Not registered yet? <a href="register.html">Register Now<span>
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.69948 1.645L7.04411 0L0 7L7.04411 14L8.69948 12.355L3.32247 7L8.69948 1.645Z" transform="translate(0.104187)" rfill="#141414"/>
+                    </svg>
+                    
+        </span></a></h3>
+        </div>
+    </div>
+    </div>
+<!--End of Login Modal-->
+
+
+<div class="content">
+    
+</div>
+
+</div>  <!--End of wrapper-->
+</body>
+</html>
